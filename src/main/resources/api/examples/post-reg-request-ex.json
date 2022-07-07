@@ -1,0 +1,14 @@
+            {
+              "registrationRequest": {
+               	"contactType": "mobile",
+               	"countryCode": "+91",
+               	"mobile": "95426005",
+               	"password": "ahgjhk123",
+               	"acceptDataPolicy": true,
+               	"receiveNews": true,
+               	"acceptPIC": true,
+               	"locale": "en",
+               	"captchatoken": "tryttyuy",
+                "receiveClaimstatus": true
+              }
+            }

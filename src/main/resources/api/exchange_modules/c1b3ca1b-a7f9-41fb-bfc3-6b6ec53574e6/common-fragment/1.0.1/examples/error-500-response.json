@@ -1,0 +1,12 @@
+                {
+                "msg": "successfull operation",
+                "code": 500,
+                "success": true,
+                "eventId": "ghfjhkjjlkl",
+                "error": 
+                {
+                  "type": "SERVER_ERROR",
+                  "title": "INTERNAL SERVER_ERROR",
+                  "details": "this input contains invalid data"
+                }
+          }

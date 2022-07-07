@@ -1,0 +1,58 @@
+#%RAML 1.0
+title: customer-reg-exp-api
+description: This api gives information about the customer registration process.
+
+uses:
+  mylib: /exchange_modules/c1b3ca1b-a7f9-41fb-bfc3-6b6ec53574e6/common-fragment/1.0.1/registration-common-resources.raml
+
+
+/customers:
+  /registration:
+    post:
+      is:
+        - mylib.common-header
+        - mylib.auth-header
+      queryParameters:
+        featureName:
+          type: string
+          required: true
+          enum:
+            - cf
+            - cwf
+          example: cf                                  
+      body:
+        application/json:
+          type: mylib.post-reg-request
+          example: !include examples/post-reg-request-ex.json
+      responses:
+        201:
+          body:
+            application/json:
+              type: mylib.post-reg-response
+              example: !include examples/post-reg-response-ex.json
+          
+        400:
+          body:
+            application/json:
+              type: mylib.error-dataType
+              example: !include /exchange_modules/c1b3ca1b-a7f9-41fb-bfc3-6b6ec53574e6/common-fragment/1.0.1/examples/error-400-response.json
+
+        401:
+          body:
+            application/json:
+              type: mylib.error-dataType
+              example: !include /exchange_modules/c1b3ca1b-a7f9-41fb-bfc3-6b6ec53574e6/common-fragment/1.0.1/examples/error-401-response.json
+        404:
+          body:
+            application/json:
+              type: mylib.error-dataType
+              example: !include /exchange_modules/c1b3ca1b-a7f9-41fb-bfc3-6b6ec53574e6/common-fragment/1.0.1/examples/error-404-response.json
+
+        500:
+          body:
+            application/json:
+              type: mylib.error-dataType
+              example: !include /exchange_modules/c1b3ca1b-a7f9-41fb-bfc3-6b6ec53574e6/common-fragment/1.0.1/examples/error-500-response.json
+
+
+            

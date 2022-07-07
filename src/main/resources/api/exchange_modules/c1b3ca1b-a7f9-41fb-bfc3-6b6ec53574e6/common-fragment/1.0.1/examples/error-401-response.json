@@ -1,0 +1,12 @@
+                {
+                "msg": "successfull operation",
+                "code": 401,
+                "success": true,
+                "eventId": "ghfjhkjjlkl",
+                "error": 
+                {
+                  "type": "UNAUTHORIZED",
+                  "title": "Unauthorized",
+                  "details": "this input contains invalid data"
+                }
+          }

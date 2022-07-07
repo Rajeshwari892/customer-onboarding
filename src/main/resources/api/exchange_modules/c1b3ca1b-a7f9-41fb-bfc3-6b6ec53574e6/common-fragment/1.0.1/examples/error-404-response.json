@@ -1,0 +1,12 @@
+                {
+                "msg": "successfull operation",
+                "code": 404,
+                "success": true,
+                "eventId": "ghfjhkjjlkl",
+                "error": 
+                {
+                  "type": "PAGE_NOT_FOUND",
+                  "title": "RESOURCE_NOT_FOUND",
+                  "details": "this input contains invalid data"
+                }
+          }

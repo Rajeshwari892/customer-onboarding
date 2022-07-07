@@ -1,0 +1,12 @@
+http:
+  listner:
+    host: "0.0.0.0"
+    port: "8081"
+  requester:
+    host: "0.0.0.0"
+    port: "8081"
+
+sfdc:
+  username: "arajeshwari2022@gmail.com"
+  password: "Rajee@1996"
+  securityToken: "imzULEPgwxUmcgiQdnYZpP4n"

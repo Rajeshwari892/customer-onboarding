@@ -1,0 +1,15 @@
+#%RAML 1.0 Library
+usage: 
+
+traits:
+  common-header: !include traits/header-common-trait.raml
+  auth-header: !include traits/header-jwt-auth-trait.raml
+
+
+types:
+  error-dataType: !include dataTypes/error-dataType.raml
+  post-reg-request: !include dataTypes/post-reg-request-dataType.raml
+  post-reg-response: !include dataTypes/post-reg-response-dataType.raml
+
+
+    
